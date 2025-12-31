@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rami Al Khonmey — Customer Support & Sales</title>
+    <meta
+      name="description"
+      content="Customer Support & Sales services for growing businesses. CRM (Zendesk), inbound/outbound calls, retention, and reporting."
+    />
+
+    <!-- Tailwind CDN (easy hosting) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,.08)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Slightly nicer scroll behavior */
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-900">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="#top" class="flex items-center gap-2">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500"></div>
+          <div class="leading-tight">
+            <div class="font-semibold tracking-tight">Rami Al Khonmey</div>
+            <div class="text-xs text-slate-500">
+              Customer Support & Sales Services
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden items-center gap-6 md:flex">
+          <a class="text-sm text-slate-600 hover:text-slate-900" href="#services">Services</a>
+          <a class="text-sm text-slate-600 hover:text-slate-900" href="#work">Work</a>
+          <a class="text-sm text-slate-600 hover:text-slate-900" href="#pricing">Pricing</a>
+          <a class="text-sm text-slate-600 hover:text-slate-900" href="#faq">FAQ</a>
+          <a class="text-sm text-slate-600 hover:text-slate-900" href="#contact">Contact</a>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95"
+          >
+            Hire Me
+            <span class="ml-2">›</span>
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuBtn"
+          class="inline-flex items-center justify-center rounded-xl border px-3 py-2 text-sm md:hidden"
+          aria-label="Toggle menu"
+        >
+          Menu
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="mobileNav" class="hidden border-t md:hidden">
+        <div class="mx-auto max-w-6xl px-4 py-3">
+          <div class="grid gap-2">
+            <a class="rounded-xl px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900" href="#services">Services</a>
+            <a class="rounded-xl px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900" href="#work">Work</a>
+            <a class="rounded-xl px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Pricing</a>
+            <a class="rounded-xl px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900" href="#faq">FAQ</a>
+            <a class="rounded-xl px-3 py-2 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900" href="#contact">Contact</a>
+
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95"
+            >
+              Hire Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="pointer-events-none absolute inset-0">
+          <div class="absolute -top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 blur-3xl opacity-20"></div>
+          <div class="absolute bottom-0 right-[-120px] h-72 w-72 rounded-full bg-slate-200 blur-3xl opacity-40"></div>
+        </div>
+
+        <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
+          <div>
+            <div class="mb-4 inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700">
+              Now available for remote work
+            </div>
+
+            <h1 class="text-4xl font-semibold tracking-tight md:text-5xl">
+              Customer Support & Sales Services for Growing Businesses
+            </h1>
+
+            <p class="mt-4 max-w-prose text-base text-slate-600 md:text-lg">
+              I help businesses improve customer satisfaction, increase sales, and retain clients through professional
+              customer support, telesales, and CRM-driven workflows.
+            </p>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-5 py-3 text-sm font-medium text-white shadow-soft hover:opacity-95"
+              >
+                Hire Me
+                <span class="ml-2">›</span>
+              </a>
+              <a
+                href="#services"
+                class="inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-medium text-slate-900 hover:bg-slate-50"
+              >
+                View Services
+              </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-3 gap-4 text-sm">
+              <div class="rounded-2xl border bg-white/60 p-3">
+                <div class="font-semibold">Fast</div>
+                <div class="text-slate-500">Quick responses</div>
+              </div>
+              <div class="rounded-2xl border bg-white/60 p-3">
+                <div class="font-semibold">Clear</div>
+                <div class="text-slate-500">Accurate updates</div>
+              </div>
+              <div class="rounded-2xl border bg-white/60 p-3">
+                <div class="font-semibold">Trusted</div>
+                <div class="text-slate-500">Professional tone</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card -->
+          <div class="rounded-3xl border bg-white p-6 shadow-soft">
+            <div class="text-lg font-semibold">Request a quote</div>
+            <div class="mt-1 text-sm text-slate-500">
+              Tell me what you need. I’ll reply within 1 business day.
+            </div>
+
+            <form class="mt-5 grid gap-3" onsubmit="return fakeSubmit(event)">
+              <input
+                class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                placeholder="What are you looking to achieve?"
+                rows="4"
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                class="rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95"
+              >
+                Send
+              </button>
+
+              <div id="fakeThanks" class="hidden rounded-xl border bg-slate-50 px-3 py-2 text-sm text-slate-700">
+                Thanks! This demo form doesn’t send yet. Connect it to a form provider (Formspree/Netlify/Resend).
+              </div>
+
+              <p class="text-xs text-slate-500">
+                By submitting, you agree to be contacted about your request.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- How -->
+      <section id="how" class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">A simple process</h2>
+        <p class="mt-2 max-w-prose text-slate-600">
+          Clear goals, professional handling, and consistent reporting.
+        </p>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">1. Discover</div>
+              <div class="text-sm text-slate-500">01</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">We clarify your goals, scripts, and KPIs.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Clear timeline</li>
+              <li>• Transparent updates</li>
+              <li>• No surprises</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">2. Deliver</div>
+              <div class="text-sm text-slate-500">02</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Support/sales execution with professional communication.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Consistent quality</li>
+              <li>• CRM updates</li>
+              <li>• Customer-first handling</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">3. Improve</div>
+              <div class="text-sm text-slate-500">03</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Weekly insights to improve conversions and satisfaction.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Performance reports</li>
+              <li>• Recommendations</li>
+              <li>• Iteration</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Services</h2>
+            <p class="mt-2 max-w-prose text-slate-600">Choose what you need — I’ll tailor the workflow.</p>
+          </div>
+          <a class="hidden rounded-xl border px-4 py-2 text-sm font-medium hover:bg-slate-50 md:inline-flex" href="#pricing">
+            View pricing
+          </a>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
+                ☎
+              </div>
+              <div class="font-semibold">Customer Support</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Professional inbound and outbound support with a calm, solution-focused approach.
+            </p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Email & live chat support</li>
+              <li>• Issue resolution</li>
+              <li>• High CSAT focus</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
+                🚀
+              </div>
+              <div class="font-semibold">Sales & Telesales</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Convert leads into customers using consultative selling and clear communication.
+            </p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Inbound & outbound calls</li>
+              <li>• Upselling & retention</li>
+              <li>• Lead qualification</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center gap-3">
+              <div class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
+                🛡
+              </div>
+              <div class="font-semibold">CRM & Operations</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Accurate customer tracking and reporting using modern CRM tools.
+            </p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Zendesk CRM</li>
+              <li>• Call & ticket logging</li>
+              <li>• Weekly performance reports</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Recent work</h2>
+        <p class="mt-2 max-w-prose text-slate-600">Experience across customer service and sales environments.</p>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl border p-6">
+            <div class="font-semibold">Crystel.co</div>
+            <div class="mt-1 text-sm text-slate-500">Handled high-volume customer interactions</div>
+            <p class="mt-3 text-sm text-slate-600">
+              Inbound/outbound calls, issue resolution, and retention using CRM workflows.
+            </p>
+          </div>
+          <div class="rounded-3xl border p-6">
+            <div class="font-semibold">Smart Buy</div>
+            <div class="mt-1 text-sm text-slate-500">Consistently achieved sales targets</div>
+            <p class="mt-3 text-sm text-slate-600">
+              Product demos, upselling, and customer relationship management.
+            </p>
+          </div>
+          <div class="rounded-3xl border p-6">
+            <div class="font-semibold">Retail & Electronics</div>
+            <div class="mt-1 text-sm text-slate-500">Improved customer experience</div>
+            <p class="mt-3 text-sm text-slate-600">
+              Hands-on experience with smart electronics and customer advisory roles.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="font-semibold">Operations Manager</div>
+                <div class="text-sm text-slate-500">E-commerce Business</div>
+              </div>
+              <div class="text-sm">★★★★★</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              “Rami is professional, reliable, and communicates clearly with customers. A strong asset to our support team.”
+            </p>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="font-semibold">Retail Supervisor</div>
+                <div class="text-sm text-slate-500">Electronics Store</div>
+              </div>
+              <div class="text-sm">★★★★★</div>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">
+              “Excellent sales skills and customer handling. Always meets targets and keeps customers satisfied.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Simple pricing</h2>
+            <p class="mt-2 max-w-prose text-slate-600">Flexible remote plans. Custom packages available.</p>
+          </div>
+          <span class="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700">Custom plans available</span>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <div class="rounded-3xl border p-6">
+            <div class="font-semibold">Support Starter</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <div class="text-3xl font-semibold">$8/hr</div>
+              <div class="text-sm text-slate-500">/remote</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Reliable customer support for small teams.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Email & chat support</li>
+              <li>• CRM updates</li>
+              <li>• Daily summaries</li>
+            </ul>
+            <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl border px-4 py-2 text-sm font-medium hover:bg-slate-50">
+              Choose Support Starter
+            </a>
+          </div>
+
+          <div class="rounded-3xl border border-slate-900/20 p-6 shadow-soft">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">Sales Growth</div>
+              <span class="rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-3 py-1 text-xs text-white">Popular</span>
+            </div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <div class="text-3xl font-semibold">$10/hr</div>
+              <div class="text-sm text-slate-500">/remote</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Customer support plus sales-focused calling.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Inbound & outbound calls</li>
+              <li>• Lead qualification</li>
+              <li>• Weekly reports</li>
+            </ul>
+            <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95">
+              Choose Sales Growth
+            </a>
+          </div>
+
+          <div class="rounded-3xl border p-6">
+            <div class="font-semibold">Full Coverage</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <div class="text-3xl font-semibold">$12/hr</div>
+              <div class="text-sm text-slate-500">/remote</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">End-to-end service and sales support.</p>
+            <ul class="mt-4 grid gap-2 text-sm text-slate-600">
+              <li>• Dedicated availability</li>
+              <li>• CRM management</li>
+              <li>• Performance insights</li>
+            </ul>
+            <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl border px-4 py-2 text-sm font-medium hover:bg-slate-50">
+              Choose Full Coverage
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="mx-auto max-w-6xl px-4 py-14">
+        <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">FAQ</h2>
+        <p class="mt-2 max-w-prose text-slate-600">Quick answers to common questions.</p>
+
+        <div class="mt-6 grid gap-3">
+          <details class="rounded-2xl border p-4">
+            <summary class="cursor-pointer font-medium">What do you need to get started?</summary>
+            <p class="mt-2 text-sm text-slate-600">
+              A short brief: your goals, working hours, tools (CRM), and any script or FAQs you already use.
+            </p>
+          </details>
+          <details class="rounded-2xl border p-4">
+            <summary class="cursor-pointer font-medium">How fast can you start?</summary>
+            <p class="mt-2 text-sm text-slate-600">
+              Usually within a few days after we agree on scope and access. I’ll confirm a timeline before we begin.
+            </p>
+          </details>
+          <details class="rounded-2xl border p-4">
+            <summary class="cursor-pointer font-medium">Do you offer weekly reporting?</summary>
+            <p class="mt-2 text-sm text-slate-600">
+              Yes. I can provide weekly updates on tickets, calls, leads, conversions, and key insights.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="mx-auto max-w-6xl px-4 py-14">
+        <div class="rounded-3xl border p-6 shadow-soft">
+          <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Contact</h2>
+          <p class="mt-2 text-slate-600">
+            Prefer email or WhatsApp? Reach me however you like.
+          </p>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="grid gap-3">
+              <div class="rounded-2xl border p-4">
+                <div class="font-medium">Email</div>
+                <div class="mt-1 text-sm text-slate-600">
+                  <a class="underline hover:no-underline" href="mailto:raminayef2@gmail.com">raminayef2@gmail.com</a>
+                </div>
+              </div>
+              <div class="rounded-2xl border p-4">
+                <div class="font-medium">Phone / WhatsApp</div>
+                <div class="mt-1 text-sm text-slate-600">
+                  <a class="underline hover:no-underline" href="tel:+962776226874">+962 776 226 874</a>
+                </div>
+              </div>
+              <div class="rounded-2xl border p-4">
+                <div class="font-medium">Location</div>
+                <div class="mt-1 text-sm text-slate-600">Amman, Jordan (Remote)</div>
+              </div>
+
+              <div class="rounded-2xl border bg-slate-50 p-4">
+                <div class="text-sm font-medium">Next step</div>
+                <p class="mt-1 text-sm text-slate-600">
+                  Want the form to actually send messages? Tell me where you host (Netlify / GitHub Pages / Vercel),
+                  and I’ll add the best form integration.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+              <form class="grid gap-3" onsubmit="return fakeSubmit(event)">
+                <input
+                  class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  class="w-full rounded-xl border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-200"
+                  placeholder="Message"
+                  rows="6"
+                  required
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95"
+                >
+                  Send message
+                </button>
+
+                <div id="fakeThanks2" class="hidden rounded-xl border bg-slate-50 px-3 py-2 text-sm text-slate-700">
+                  Message captured (demo). Connect a form provider to receive it.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t">
+        <div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 md:grid-cols-3">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500"></div>
+              <div class="font-semibold">Rami Al Khonmey</div>
+            </div>
+            <p class="text-sm text-slate-600">
+              Customer Support & Sales services for growing businesses — CRM-driven workflows, calling, and reporting.
+            </p>
+          </div>
+
+          <div class="grid gap-2 text-sm">
+            <div class="font-medium">Explore</div>
+            <a class="text-slate-600 hover:text-slate-900" href="#services">Services</a>
+            <a class="text-slate-600 hover:text-slate-900" href="#work">Work</a>
+            <a class="text-slate-600 hover:text-slate-900" href="#pricing">Pricing</a>
+            <a class="text-slate-600 hover:text-slate-900" href="#faq">FAQ</a>
+            <a class="text-slate-600 hover:text-slate-900" href="#contact">Contact</a>
+          </div>
+
+          <div class="grid gap-2 text-sm">
+            <div class="font-medium">Get in touch</div>
+            <div class="text-slate-600">raminayef2@gmail.com</div>
+            <div class="text-slate-600">+962 776 226 874</div>
+            <div class="text-slate-600">Amman, Jordan (Remote)</div>
+
+            <a
+              href="#contact"
+              class="mt-2 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-medium text-white shadow-soft hover:opacity-95"
+            >
+              Contact
+              <span class="ml-2">›</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-6xl px-4 pb-10">
+          <div class="flex flex-col items-start justify-between gap-2 border-t pt-6 text-xs text-slate-500 md:flex-row">
+            <div>© <span id="year"></span> Rami Al Khonmey. All rights reserved.</div>
+            <div class="flex items-center gap-2">
+              <span class="opacity-70">Built with</span>
+              <span class="inline-flex items-center gap-1">
+                <span class="inline-block h-2 w-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500"></span>
+                <span class="opacity-70">HTML + Tailwind</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // mobile menu
+      const btn = document.getElementById("menuBtn");
+      const nav = document.getElementById("mobileNav");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("hidden");
+        btn.textContent = nav.classList.contains("hidden") ? "Menu" : "Close";
+      });
+
+      // close mobile menu on link click
+      nav.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          nav.classList.add("hidden");
+          btn.textContent = "Menu";
+        });
+      });
+
+      // demo form submit
+      function fakeSubmit(e) {
+        e.preventDefault();
+        const thanks = document.getElementById("fakeThanks");
+        const thanks2 = document.getElementById("fakeThanks2");
+        if (thanks) {
+          thanks.classList.remove("hidden");
+          setTimeout(() => thanks.classList.add("hidden"), 3500);
+        }
+        if (thanks2) {
+          thanks2.classList.remove("hidden");
+          setTimeout(() => thanks2.classList.add("hidden"), 3500);
+        }
+        e.target.reset();
+        return false;
+      }
+      window.fakeSubmit = fakeSubmit;
+    </script>
+  </body>
+</html>
